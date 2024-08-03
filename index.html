@@ -49,7 +49,10 @@
         input[type="checkbox"] {
             margin-right: 5px;
         }
-
+        .button-group{
+            display: flex;
+            justify-content: space-between;
+        }
         button {
             width: 100%;
             padding: 10px;
@@ -92,7 +95,7 @@
 
         <label for="course">Курс:</label>
         <select id="course" name="course" required>
-            <option value="">-=Виберіть курс=-</option>
+            <option value="">----Виберіть курс----</option>
             <option value="frontend">Front-End</option>
             <option value="backend">Back-End</option>
             <option value="pm">Project Management</option>
@@ -105,7 +108,10 @@
         <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
         <label for="privacy_policy" style="display: inline;">Я погоджуюсь з обробкою персональних даних</label><br>
 
-        <button type="submit">Зареєструватись</button>
+        <div class="button-group">
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватись</button>
+        </div>
     </form>
 </body>
 
